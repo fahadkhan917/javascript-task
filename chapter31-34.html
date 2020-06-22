@@ -1,0 +1,139 @@
+<script>
+
+
+//Q1
+// var a=new Date();
+// document.write(a);
+
+
+//Q2
+// var arr=["january","February","March","April","May","june","july","august","sep","oct","nov","dec"];
+// var a=new Date();
+// var month=a.getMonth();
+// var cumoth=arr[month];
+// document.write(cumoth);
+
+//Q3
+
+// var a=new Date();
+// var b=a.toString();
+// var today=b.slice(0,3);
+// document.write(today);
+
+//Q4
+// var a=new Date();
+// var b=a.getDay();
+// if(b==0 || b==7){
+// document.write("its fun day");
+// }
+
+//Q5
+
+// var a=new Date();
+// var b=a.getDate();
+// if(b<=15){
+// document.write("First fifteen days of the month");
+// }
+// else if(b=>15){
+
+//     document.write("Last days of the month");
+// }
+
+//Q6
+// var a=new Date();
+// document.write("Current date"+a+"<br>");
+// var milisec=a.getTime();
+// document.write("Elapsed milisecond since January 1,1970"+milisec+"<br>");
+// var min=milisec/(1000*60*60);
+// document.write("Elapsed minutes since January"+min);
+
+
+//Q7
+// var a=new Date();
+// var b=a.getHours();
+// if(b<=12){
+// document.write("Am");
+// }
+// else if(b>=12){
+// document.write("PM");
+
+// }
+
+//Q8
+// var a=new Date("dec 31, 2020");
+// document.write(a);
+
+
+//Q9
+// var a=new Date("june 18, 2015");
+// var b=a.getTime();
+// var c=new Date();
+// var d=c.getTime();
+// var fin=d-b;
+// var final=fin/(1000*60*60*24);
+// document.write(final);
+
+//Q10
+// var a=new Date("dec 05,2015");
+// document.write("On refernce date"+a+"<br>");
+// var b=a.getTime();
+// var c=new Date();
+// var d=c.getTime();
+// var fin=d-b;
+// var final=fin/(1000*60);
+// var finaal=Math.floor(final);
+// document.write(finaal+"seconds had passed since begining of 2015");
+
+//q11
+// var a=new Date();
+// document.write("current date"+a);
+// var b=a.toString();
+// var c=b.slice(15,22);
+// var d=c/60;
+// document.write(c);
+
+
+//Q12
+
+
+
+
+
+///Q13
+
+// var a=(prompt(new Date(),"enter the value"));
+// var b=a.getTime();
+// var c=new Date();
+// var d=a.getTime();
+// var e=d-b;
+// document.write(e);
+
+
+// q14
+document.write("<h1>K-Electric Bill</h1>")
+var a=prompt("enter the user name");
+document.write("Customer Name"+a+"<br>");
+var arr=["january","February","March","April","May","june","july","august","sep","oct","nov","dec"];
+var b=new Date();
+var c=b.getMonth();
+var mon=arr[c];
+document.write("Current month:"+mon+"<br>");
+var numunit=prompt("enter the number of unit");
+document.write("Number of units"+numunit+"<br>");
+var chrperunit=prompt("enter the charges per unit");
+document.write("Charges per units"+chrperunit+"<br>");
+document.write("<br>");
+var netamount=numunit*chrperunit;
+document.write("Net Amount Payable(Within Due Date):"+netamount+"<br>");
+var latepay=350;
+document.write("Late payemnt surcharge:"+latepay+"<br>");
+var groamount=netamount+latepay;
+document.write("Gross Amount Payable(After Due Date)"+groamount+"<br>");
+
+
+
+
+
+
+
+</script>
