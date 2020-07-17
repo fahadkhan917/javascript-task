@@ -86,49 +86,61 @@
 
 //q11
 // var a=new Date();
-// document.write("current date"+a);
-// var b=a.toString();
-// var c=b.slice(15,22);
-// var d=c/60;
-// document.write(c);
+// document.write("current date"+a+"<br>");
 
+// var b=a.toString();
+// var c=b.slice(0,15);
+// document.write("1 hour ago,it was"+c);
+
+// var d=a.toString();
+// var e=d.slice(15,18)-1;
+// document.write(" "+e);
+
+// var f=a.toString();
+// var g=f.slice(18,70);
+// document.write(g);
 
 //Q12
 
-
-
+// var a=new Date();
+// document.write(a+"<br>");
+// var b=new Date("jun 23,1915");
+// document.write(b);
 
 
 ///Q13
 
-// var a=(prompt(new Date(),"enter the value"));
+// var a=new Date(prompt("enter you age"));
 // var b=a.getTime();
 // var c=new Date();
-// var d=a.getTime();
+// var d=c.getTime();
 // var e=d-b;
 // document.write(e);
+// var f=Date.now();
+// document.write(f);
+
 
 
 // q14
-document.write("<h1>K-Electric Bill</h1>")
-var a=prompt("enter the user name");
-document.write("Customer Name"+a+"<br>");
-var arr=["january","February","March","April","May","june","july","august","sep","oct","nov","dec"];
-var b=new Date();
-var c=b.getMonth();
-var mon=arr[c];
-document.write("Current month:"+mon+"<br>");
-var numunit=prompt("enter the number of unit");
-document.write("Number of units"+numunit+"<br>");
-var chrperunit=prompt("enter the charges per unit");
-document.write("Charges per units"+chrperunit+"<br>");
-document.write("<br>");
-var netamount=numunit*chrperunit;
-document.write("Net Amount Payable(Within Due Date):"+netamount+"<br>");
-var latepay=350;
-document.write("Late payemnt surcharge:"+latepay+"<br>");
-var groamount=netamount+latepay;
-document.write("Gross Amount Payable(After Due Date)"+groamount+"<br>");
+// document.write("<h1>K-Electric Bill</h1>")
+// var a=prompt("enter the user name");
+// document.write("Customer Name"+a+"<br>");
+// var arr=["january","February","March","April","May","june","july","august","sep","oct","nov","dec"];
+// var b=new Date();
+// var c=b.getMonth();
+// var mon=arr[c];
+// document.write("Current month:"+mon+"<br>");
+// var numunit=prompt("enter the number of unit");
+// document.write("Number of units"+numunit+"<br>");
+// var chrperunit=prompt("enter the charges per unit");
+// document.write("Charges per units"+chrperunit+"<br>");
+// document.write("<br>");
+// var netamount=numunit*chrperunit;
+// document.write("Net Amount Payable(Within Due Date):"+netamount+"<br>");
+// var latepay=350;
+// document.write("Late payemnt surcharge:"+latepay+"<br>");
+// var groamount=netamount+latepay;
+// document.write("Gross Amount Payable(After Due Date)"+groamount+"<br>");
 
 
 
